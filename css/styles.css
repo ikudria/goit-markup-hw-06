@@ -288,8 +288,12 @@ a[title] {
     text-transform: uppercase;
 }
 
-.hero .button {
-    display: inline-block;
+.primary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
@@ -309,7 +313,7 @@ a[title] {
 
 }
 
-.hero .button:hover {
+.primary-button:hover {
     background-color: rgba(24, 140, 232, 1);
 }
 
@@ -810,6 +814,11 @@ a[href="tel:+380991111111"] {
     margin-right: 70px;
 }
 
+.social-networks {
+    margin-right: 93px;
+}
+
+
 .social-list {
     display: flex;
     justify-content: center;
@@ -861,6 +870,50 @@ a[href="tel:+380991111111"] {
 }
 
 
+/*Subscribe*/
+
+/*.subscribe-header {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+*/
+
+.subscribe-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.email-input {
+    width: 400px;
+    margin-right: 12px;
+    padding: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: inherit;
+}
+
+
+
+.subscribe-icon {
+    margin-left: 10px;
+    vertical-align: middle;
+    fill: currentColor;  
+
+}
+
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -889,12 +942,15 @@ a[href="tel:+380991111111"] {
 
 
 .modal {
+    padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
 
     min-height: 581px;
-    min-width: 528px; 
+    max-width: 528px;
+    width: 100%;
+    
 
     background-color: var(--main-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -920,20 +976,94 @@ a[href="tel:+380991111111"] {
     justify-content: center;
     align-items: center;
     
-    background-color: var(--main-white-color);
+    background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
 }
 
-.close-button:hover {
+.close-button:hover .close-icon, .close-button:active .close-icon, .close-button:focus .close-icon{
     cursor: pointer;
-    border-color:#2F303A;
+    fill: var(--accent-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 .close-icon {
 
     width: 11px;
     height: 11px;
     fill: #000000;
+}
+
+.form-title {
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    
+
+    color: #212121;
+}
+
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form-text {
+    margin-bottom: 4px;
+    /*font-family: 'Roboto';*/
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: var(--primary-text-color);
+
+}
+
+.form-input {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 42px;
+    width: 100%;
+}
+
+.form-textarea {
+    padding: 12px 16px;
+    height: 120px;
+    resize: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+.form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.input-wrapper {
+    position: relative;
 }
