@@ -315,6 +315,7 @@ a[title] {
 
 .primary-button:hover {
     background-color: rgba(24, 140, 232, 1);
+    
 }
 
 /* Features */
@@ -872,15 +873,6 @@ a[href="tel:+380991111111"] {
 
 /*Subscribe*/
 
-/*.subscribe-header {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-}
-*/
 .subscribe {
     margin-left: auto;
 }
@@ -906,8 +898,6 @@ a[href="tel:+380991111111"] {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: inherit;
 }
-
-
 
 .subscribe-icon {
     margin-left: 10px;
@@ -1144,23 +1134,14 @@ a[href="tel:+380991111111"] {
     
 } 
 
-/*
-.policy-check {
-    margin-bottom: 30px;
-    align-items: center;
-    outline: 1px solid blue;
-   
-    
-    
-} */
 
-.check-input {
-    /*-webkit-appearance: none;
+/* .check-input {
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    */
+    
 
-}
+} */
 
 .checkbox-icon {
     display: inline-block;
